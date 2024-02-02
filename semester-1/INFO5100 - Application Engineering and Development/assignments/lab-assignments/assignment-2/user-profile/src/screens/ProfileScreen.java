@@ -335,7 +335,7 @@ public class ProfileScreen extends javax.swing.JFrame {
             if(!txtAge.getText().trim().isBlank())
                 Double.parseDouble(txtAge.getText().trim());
         }catch(NumberFormatException e){
-//            txtAge.setText("");
+            txtAge.setText("");
             showDialog(null, "Only numbers are allowed for Age!");
         }
     }//GEN-LAST:event_txtAgeKeyTyped
