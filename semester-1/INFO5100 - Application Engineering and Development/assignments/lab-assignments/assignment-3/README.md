@@ -1,4 +1,4 @@
-# Lab Assignment - 2
+# Lab Assignment - 3
 
 ### Problem Definition
 #### Create a Java Swing Application for entering Patient Details 
