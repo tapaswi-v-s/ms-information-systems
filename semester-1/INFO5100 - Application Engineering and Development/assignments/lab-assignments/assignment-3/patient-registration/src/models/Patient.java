@@ -6,7 +6,6 @@ package models;
 
 import java.io.File;
 import java.time.LocalDate;
-import java.util.Date;
 
 /**
  *
@@ -19,16 +18,18 @@ public class Patient {
     private final String email;
     private final String message;
     private final String patientType;
+    private final String gender;
     private final File image;
 
     public Patient(String fName, String lName, String dob, String email,
-            String message, String patientType, File image) {
+            String message, String patientType, String gender, File image) {
         this.fName = fName;
         this.lName = lName;
         this.dob = dob;
         this.email = email;
         this.message = message;
         this.patientType = patientType;
+        this.gender = gender;
         this.image = image;
     }
 
@@ -56,6 +57,10 @@ public class Patient {
         return patientType;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
     public File getImage() {
         return image;
     }
@@ -67,6 +72,7 @@ public class Patient {
         str += "\nDOB: "+dob;
         str += "\nAge: "+(LocalDate.now().getYear() - Integer.parseInt(dob.split("-")[2]))+" Years";
         str += "\nEmail: "+email;
+        str += "\nGender: "+gender;
         str += "\nMessage: "+message;
         return str;
     }

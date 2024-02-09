@@ -38,12 +38,13 @@ public class DisplayPanel extends javax.swing.JPanel {
                 +", Age: "+(LocalDate.now().getYear() -
                 Integer.parseInt(patient.getDob().split("-")[2]))+" years");
         lblPatientType.setText("Type: "+patient.getPatientType());
+        lblGender.setText("Gender: "+patient.getGender());
         lblMsg.setText("<html><p>"
                 + patient.getMessage()
                 + "</p></html>");
         
         lblImage.setIcon(new ImageIcon(new ImageIcon(patient.getImage().getAbsolutePath())
-                .getImage().getScaledInstance(100, 100,
+                .getImage().getScaledInstance(200,200,
                     Image.SCALE_SMOOTH)));
     }
 
@@ -63,6 +64,7 @@ public class DisplayPanel extends javax.swing.JPanel {
         lblMsg = new javax.swing.JLabel();
         lblImage = new javax.swing.JLabel();
         btnBack = new javax.swing.JButton();
+        lblGender = new javax.swing.JLabel();
 
         lblMsg.setMaximumSize(new java.awt.Dimension(224, 60));
         lblMsg.setPreferredSize(new java.awt.Dimension(224, 60));
@@ -89,12 +91,13 @@ public class DisplayPanel extends javax.swing.JPanel {
                             .addComponent(lblPatientType, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblDob, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblMsg, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblMsg, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblGender, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(110, 110, 110)))
                 .addComponent(lblImage, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(75, 75, 75))
             .addGroup(layout.createSequentialGroup()
-                .addGap(271, 271, 271)
+                .addGap(272, 272, 272)
                 .addComponent(btnBack)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -105,9 +108,7 @@ public class DisplayPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblImage, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
-                        .addComponent(btnBack)
-                        .addGap(95, 95, 95))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -116,9 +117,13 @@ public class DisplayPanel extends javax.swing.JPanel {
                         .addComponent(lblDob, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblPatientType, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblGender, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(lblMsg, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                        .addComponent(btnBack)
+                        .addGap(32, 32, 32))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -133,6 +138,7 @@ public class DisplayPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnBack;
     private javax.swing.JLabel lblDob;
     private javax.swing.JLabel lblEmail;
+    private javax.swing.JLabel lblGender;
     private javax.swing.JLabel lblImage;
     private javax.swing.JLabel lblMsg;
     private javax.swing.JLabel lblName;

@@ -29,6 +29,7 @@
                           <Component id="lblDob" alignment="0" max="32767" attributes="0"/>
                           <Component id="lblEmail" max="32767" attributes="0"/>
                           <Component id="lblMsg" alignment="0" max="32767" attributes="0"/>
+                          <Component id="lblGender" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
                   </Group>
@@ -37,7 +38,7 @@
               <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="271" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="272" max="-2" attributes="0"/>
               <Component id="btnBack" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -50,9 +51,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="lblImage" min="-2" pref="167" max="-2" attributes="0"/>
-                      <EmptySpace pref="83" max="32767" attributes="0"/>
-                      <Component id="btnBack" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="lblName" min="-2" pref="20" max="-2" attributes="0"/>
@@ -62,9 +61,13 @@
                       <Component id="lblDob" min="-2" pref="20" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="lblPatientType" min="-2" pref="20" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="lblGender" min="-2" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="lblMsg" min="-2" pref="58" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="83" max="32767" attributes="0"/>
+                      <Component id="btnBack" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -99,6 +102,8 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblGender">
     </Component>
   </SubComponents>
 </Form>
