@@ -1,8 +1,8 @@
-package shop;
+package com.tapaswi.shop;
 
 
-import data.DataHolder;
-import models.Shoe;
+import com.tapaswi.data.DataHolder;
+import com.tapaswi.models.Shoe;
 
 import java.util.List;
 

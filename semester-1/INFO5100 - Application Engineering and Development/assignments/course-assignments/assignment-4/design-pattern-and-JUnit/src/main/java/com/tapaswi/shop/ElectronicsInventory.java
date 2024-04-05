@@ -1,7 +1,7 @@
-package shop;
+package com.tapaswi.shop;
 
-import data.DataHolder;
-import models.ElectronicItem;
+import com.tapaswi.data.DataHolder;
+import com.tapaswi.models.ElectronicItem;
 
 import java.util.List;
 

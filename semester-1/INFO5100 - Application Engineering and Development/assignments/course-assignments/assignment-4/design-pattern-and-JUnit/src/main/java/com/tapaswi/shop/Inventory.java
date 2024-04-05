@@ -1,4 +1,5 @@
-package shop; /**
+package com.tapaswi.shop;
+/**
  *
  * @author Tapaswi Satyapanthi
  * @version 1.0

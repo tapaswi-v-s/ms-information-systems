@@ -1,4 +1,4 @@
-package models;
+package com.tapaswi.models;
 
 /**
  * An enumeration to for identifying the type of inventory

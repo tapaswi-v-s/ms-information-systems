@@ -1,9 +1,11 @@
-import models.ElectronicItem;
-import models.InventoryType;
-import models.Shoe;
-import models.Furniture;
-import shop.Inventory;
-import shop.Shop;
+package com.tapaswi;
+
+import com.tapaswi.models.ElectronicItem;
+import com.tapaswi.models.Furniture;
+import com.tapaswi.models.InventoryType;
+import com.tapaswi.models.Shoe;
+import com.tapaswi.shop.Inventory;
+import com.tapaswi.shop.Shop;
 
 /**
  * A main class with the implementation of facade pattern

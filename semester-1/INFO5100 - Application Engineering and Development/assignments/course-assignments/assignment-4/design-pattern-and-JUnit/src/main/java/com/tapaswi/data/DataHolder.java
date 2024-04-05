@@ -1,8 +1,9 @@
-package data;
+package com.tapaswi.data;
 
-import models.ElectronicItem;
-import models.Shoe;
-import models.Furniture;
+
+import com.tapaswi.models.ElectronicItem;
+import com.tapaswi.models.Furniture;
+import com.tapaswi.models.Shoe;
 
 import java.util.ArrayList;
 import java.util.List;

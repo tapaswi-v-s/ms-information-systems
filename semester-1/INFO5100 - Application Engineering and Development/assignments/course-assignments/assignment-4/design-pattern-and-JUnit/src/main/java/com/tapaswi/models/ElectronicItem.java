@@ -1,24 +1,24 @@
-package models;
+package com.tapaswi.models;
 
 /**
- * Class for Furniture Type of Inventory
+ * Class for Electronics Type of Inventory
  * @author Tapaswi Satyapanthi
  * @version 1.0
  * */
-public class Furniture {
+public class ElectronicItem {
 
     /**
-     * Identification number of the Furniture item
+     * Identification number of the electronic item
      * */
     private final int id;
 
     /**
-     * Name of the Furniture item
+     * Name of the electronic item
      * */
     private final String name;
 
     /**
-     * Price associated with this Furniture item
+     * Price associated with this electronic item
      * */
     private final double price;
 
@@ -28,20 +28,19 @@ public class Furniture {
      * @param name name of this product
      * @param price price of this item
      * */
-    public Furniture(int id, String name, double price) {
+    public ElectronicItem(int id, String name, double price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
     /**
-     * A getter method for id
-     * @return id of the item
-     * */
+    * A getter method for id
+    * @return id of the item
+    * */
     public int getId() {
         return id;
     }
-
 
     /**
      * Method to print the details of the object
@@ -49,7 +48,7 @@ public class Furniture {
      * */
     @Override
     public String toString() {
-        return "Furniture{" +
+        return "ElectronicItem{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price= $" + price +

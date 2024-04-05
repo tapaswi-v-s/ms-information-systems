@@ -1,9 +1,9 @@
-package shop;
+package com.tapaswi.shop;
 
-import models.ElectronicItem;
-import models.Furniture;
-import models.InventoryType;
-import models.Shoe;
+import com.tapaswi.models.ElectronicItem;
+import com.tapaswi.models.Furniture;
+import com.tapaswi.models.InventoryType;
+import com.tapaswi.models.Shoe;
 
 import java.util.List;
 
@@ -48,11 +48,15 @@ public class Shop {
      * @return An inventory based on the provided type; null if invalid type.
      * */
     public Inventory getInventory(InventoryType inventoryType){
-        return switch (inventoryType) {
-            case ELECTRONICS -> electronicsInventory;
-            case SHOES -> shoeInventory;
-            case FURNITURE -> furnitureInventory;
+        switch (inventoryType) {
+            case ELECTRONICS:
+                return electronicsInventory;
+            case SHOES:
+                return shoeInventory;
+            case FURNITURE:
+                return furnitureInventory;
         };
+        return null;
     }
 //    ==================== ==================== ===================
 
